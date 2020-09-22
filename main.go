@@ -11,7 +11,7 @@ func main() {
 
 	fmt.Println(card)
 
-	// For Loops & Arrays (Slice)
+	// For Loops & Slices (Arrays)
 	colors := []string{"Blue", "Red", "Green", "Yellow"}
 	for index, color := range colors {
 		fmt.Println(index, color)
