@@ -12,14 +12,15 @@ func main() {
 	for index, color := range colors {
 		fmt.Println(index, color)
 	} */
+	// Invoke new Deck function
+	cards := newDeck()
+	// Invoke print receiver function
+	// cards.print()
 
-	// Pass props to deck type (Custom Type)
-	cards := deck{"Ace of Spades", "Five of Diamonds", "Three of Hearts"}
-	// Invoke print function
-	cards.print()
+	// Invoke deal function
+	hand, remainingCards := deal(cards, 5)
 
-}
+	hand.print()
+	remainingCards.print()
 
-func newCard() string {
-	return "Ace of spades"
 }
