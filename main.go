@@ -12,15 +12,25 @@ func main() {
 	for index, color := range colors {
 		fmt.Println(index, color)
 	} */
-	// Invoke new Deck function
+	/*// Invoke new Deck function
 	cards := newDeck()
 	// Invoke print receiver function
 	// cards.print()
 
 	// Invoke deal function
 	hand, remainingCards := deal(cards, 5)
-
 	hand.print()
-	remainingCards.print()
+	remainingCards.print()*/
+
+	// Write and read in File System
+	//cards := newDeck()
+	//cards.saveToFile("my_cards")
+	// cards := newDeckFromFile("my_cards")
+	// cards.print()
+
+	// Shuffle
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 
 }
