@@ -17,5 +17,7 @@
 
 ## Other Projects
 
-`cd stucts`
+### i.e. structs
+
+`cd structs`
 `go run main.go`
