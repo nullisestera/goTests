@@ -50,10 +50,19 @@ func main() {
 	// Invoke Receiver function
 	uli.print()
 
+	// Invoke with pointer
+	uli.updateName("Samantha")
+	uli.print()
+
 }
 
 // Receiver Functions with structs
 
 func (p person2) print() {
-	fmt.Println("Ulises Email", p.contactInfo.email)
+	fmt.Println("Name", p.firstName)
+	fmt.Println("Email", p.contactInfo.email)
+}
+
+func (pe *person2) updateName(newFirstName string) {
+	(*pe).firstName = newFirstName
 }
